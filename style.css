@@ -1,0 +1,192 @@
+html, body{
+    background-color: rgb(23, 22, 22);
+}
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background: #333;
+  }
+  
+  
+  .logo img {
+    max-width: 10em; 
+    height: auto;
+  }
+  
+  
+  #navbar {
+    list-style: none;
+    display: flex;
+    margin-left: auto; 
+    padding: 0;
+  }
+  
+  #navbar li {
+    padding: 0 1em; 
+  }
+  
+  #navbar a {
+    text-decoration: none;
+    color: gold; 
+    font-size: 1em; 
+  }
+
+#product-showcase{
+    position: relative;
+    text-align: center;
+    color:rgb(252, 251, 246);
+    
+}
+
+#product-image{
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(100%);
+}
+
+#hero-content {
+    position: relative;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    max-width: 960px; 
+    padding: 1em; 
+    background: rgba(1, 0, 0, 0.7);
+  }
+
+.btn-learn-more{
+    background-color: #f0c14b;
+    color: #333;
+    text-decoration: none;
+    padding: 1em 2em;
+    display: inline-block;
+    border-radius: 1px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-learn-more:hover{
+    background-color: #d6a70c;
+}
+
+.features-section, .testimonials-section{
+    color: rgb(205, 202, 202);
+    padding: 2em;
+    text-align: center;
+}
+
+.features-section h2, .testimonials-section h2{
+    margin-bottom: 2em;
+    text-decoration: underline;
+    
+}
+ .feature, .testimonial{
+    margin-bottom: 1em;
+ }
+
+.testimonial blockquote{
+    quotes: "“" "”" "‘" "’";
+    padding: 1em 2em;
+    background: #4d4d18;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    font-style: italic;
+}
+
+.testimonial blockquote:before{
+    content: open-quote;
+}
+
+.testimonial blockquote:after{
+    content: close-quote;
+}
+
+.customer-name{
+    font-weight: lighter;
+    display: block;
+}
+
+.cta-section{
+    background: #2a292585;
+    text-align: center;
+    padding: 4em;
+    color: white;
+}
+
+.cta-section h2{
+    margin-bottom: 0.5em;
+}
+
+.cta-section p{
+    margin-bottom: 2em;
+    
+}
+
+.btn-buy-now{
+    background-color: #f0c14b;
+    color: #333333;
+    text-decoration: none;
+    padding: 1em 2em;
+    border-radius: 2px;
+    
+    transition: background-color 0.2s ease;
+}
+
+.btn-buy-now:hover{
+    background-color: #bc9919;
+}
+
+.site-footer{
+    background: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.site-footer p{
+    margin-bottom: 1em;
+}
+
+.social-links a{
+    margin: 0 10px;
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.social-links:hover{
+    color: #fff;
+}
+  
+  
+  
+  @media (max-width: 480px) {
+    #header {
+      flex-direction: column;
+    }
+  
+    .logo img {
+      max-width: 100%; 
+      margin-bottom: 1em;
+    }
+  
+    #navbar {
+      width: 100%;
+      flex-direction: column;
+      align-items: center; 
+    }
+  
+    #navbar li {
+      padding: 0.5em; 
+    }
+  
+    #navbar a {
+      text-align: center; 
+    }
+  }
+  
